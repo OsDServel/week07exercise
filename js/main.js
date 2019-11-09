@@ -11,9 +11,9 @@
 // }
 
 var myH1= document.getElementById('popcorn');
-myH1.innerText= "orange"
+myH1.innerText= "orange";
 
-otherH1= document.getElementById('stress')
+otherH1= document.getElementById('stress');
 
 function myFunction(){
 	var monkeyVal= document.getElementById('monkey').value;
@@ -25,8 +25,8 @@ function myFunction(){
 
 var myMind= ['Health', 'Music', 'Spirit', 'Soul', '3rd Eye']
 
-for(i= 0; i< myMind.length; i++){
-	console.log(myMind[0]);
+for(var i= 0; i< myMind.length; i++){
+	console.log(myMind[i]);
 	// console.log(myMind[1]);
 	// console.log(myMind[2]);
 	// console.log(myMind[3]);
@@ -42,28 +42,15 @@ var pumpkin= [
 		name: 'Antonio',
 		city: 'Oakland',
 		color: 'black'
-	},
-	{
-		name: 'Mayra',
-		city: 'San Jose',
-		color: 'Orange'
-	},
-	{
-		name: 'Juan',
-		city: 'Milpitas',
-		color: 'Red'
 	}]
 
 // Console logging var pumpkin, at 0 index
 	console.log(pumpkin[0]);
 // Console logging var pumpkin, at 0 index, property city 
+	console.log(pumpkin[0].name);
 	console.log(pumpkin[0].city);
-
-	console.log(pumpkin[1]);
-	console.log(pumpkin[1].color);
-
-	console.log(pumpkin[2]);
-	console.log(pumpkin[2].name);
+	console.log(pumpkin[0].color);
+	
 
 //12.
 
@@ -74,9 +61,9 @@ var two= document.getElementById('foo');
 var three= document.getElementById('breathe')
 
 //pushing object values into element variables innertext
-one.innerText= pumpkin[0].city;
-two.innerText= pumpkin[1].color;
-three.innerText= pumpkin[2].name;
+	one.innerText= pumpkin[0].city;
+	two.innerText= pumpkin[0].color;
+	three.innerText= pumpkin[0].name;
 
 //14.
 var octopus= [
@@ -96,12 +83,12 @@ var octopus= [
 	job: true
 }]
 
-for(i= 0; i< octopus.length; i++){
-	console.log(octopus[0]);
-	console.log(octopus[1]);
-	console.log(octopus[2]);
-	break;
-
+for( var i= 0; i< octopus.length; i++){
+	console.log(octopus[i].age);
+	console.log(octopus[i].name);
+	console.log(octopus[i].job);
+//NOTE: sometime its best NOT to break the loop. please experiment.
+	// break;
 }
 
 //15. changing color of the body text in Javascript
